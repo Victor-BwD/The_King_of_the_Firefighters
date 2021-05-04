@@ -1,0 +1,490 @@
+[gd_scene load_steps=56 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Building.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Floor.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/kisspng-rock-boulder-clip-art-stones-and-rocks-5ab487369ec306.5521394015217805346503 (1).png" type="Texture" id=4]
+[ext_resource path="res://Sprites/kisspng-stock-xchng-batten-plank-bohle-portable-network-gr-wood-batten-board-wood-board-png-image-picpng-5bed8a94df4164.5127217415422941649145.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Balde_Água.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/flames_1.png" type="Texture" id=7]
+[ext_resource path="res://Interface.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scripts/Fire.gd" type="Script" id=9]
+[ext_resource path="res://Scripts/Balde.gd" type="Script" id=10]
+[ext_resource path="res://Scripts/GoToNível3.gd" type="Script" id=11]
+[ext_resource path="res://0dc26786545163e29ac09b20befbd13b.png" type="Texture" id=12]
+[ext_resource path="res://Audio.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Audio_fire.tscn" type="PackedScene" id=14]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 6.95229
+
+[sub_resource type="RectangleShape2D" id=2]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 159.788, 5.51274 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 47.4392, 1.75897 )
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 6.24608
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 7.09937, 9.01169 )
+
+[sub_resource type="CircleShape2D" id=7]
+
+[sub_resource type="CircleShape2D" id=8]
+radius = 16.1528
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 512, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 640, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 768, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 896, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 0, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 128, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 256, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 384, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 512, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 640, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 768, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 896, 128, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 0, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 128, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 256, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 384, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 512, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 640, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 768, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 896, 256, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 0, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=34]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 128, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=35]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 256, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=36]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 384, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=37]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 512, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=38]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 640, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=39]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 768, 384, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=40]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 896, 384, 128, 128 )
+
+[sub_resource type="SpriteFrames" id=41]
+animations = [ {
+"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="level2" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 59.5906, 152.9 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Player"]
+position = Vector2( -1.23743, 0.530319 )
+shape = SubResource( 1 )
+
+[node name="Position2D" type="Position2D" parent="Player"]
+
+[node name="Building" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0.315002, 0 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Building"]
+position = Vector2( 319.861, -4.76221 )
+collision_layer = 3
+collision_mask = 2147483651
+mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Building/RigidBody2D"]
+scale = Vector2( 3.33633, 17.7776 )
+shape = SubResource( 2 )
+
+[node name="RigidBody2D3" type="RigidBody2D" parent="Building"]
+position = Vector2( 160.942, -127.66 )
+rotation = 1.5708
+collision_layer = 3
+collision_mask = 2147483651
+mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Building/RigidBody2D3"]
+scale = Vector2( 3.33633, 17.7776 )
+shape = SubResource( 2 )
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="Building"]
+position = Vector2( 5.55591, -2.3811 )
+collision_layer = 3
+collision_mask = 2147483651
+mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Building/RigidBody2D2"]
+scale = Vector2( 3.33633, 17.7776 )
+shape = SubResource( 2 )
+
+[node name="Chão" type="StaticBody2D" parent="."]
+position = Vector2( 161.109, 178.495 )
+scale = Vector2( 2.0451, 1.03972 )
+collision_layer = 3
+collision_mask = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chão"]
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chão"]
+shape = SubResource( 3 )
+
+[node name="PinJoint2D" type="PinJoint2D" parent="."]
+position = Vector2( 162.498, 168.005 )
+scale = Vector2( 0.819496, 0.519995 )
+node_a = NodePath("../Pedra")
+node_b = NodePath("Tábua")
+bias = 0.9
+
+[node name="Tábua" type="RigidBody2D" parent="PinJoint2D"]
+position = Vector2( -0.858425, -37.3258 )
+collision_layer = 3
+collision_mask = 3
+can_sleep = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="PinJoint2D/Tábua"]
+scale = Vector2( 0.122703, -0.00889355 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PinJoint2D/Tábua"]
+scale = Vector2( 1.58573, 1 )
+shape = SubResource( 4 )
+
+[node name="Pedra" type="StaticBody2D" parent="."]
+position = Vector2( 161.327, 162.718 )
+scale = Vector2( 1.81205, 2.08 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Pedra"]
+scale = Vector2( 0.015, 0.015 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pedra"]
+position = Vector2( 0.353546, -0.353546 )
+shape = SubResource( 5 )
+
+[node name="Balde" type="RigidBody2D" parent="."]
+position = Vector2( 82.8987, 163.124 )
+input_pickable = true
+collision_layer = 2
+collision_mask = 2
+gravity_scale = 10.0
+can_sleep = false
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Balde"]
+position = Vector2( -0.109863, 0.0682983 )
+scale = Vector2( 0.03, 0.03 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balde"]
+shape = SubResource( 6 )
+
+[node name="pickable_area" type="Area2D" parent="Balde"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balde/pickable_area"]
+shape = SubResource( 7 )
+
+[node name="Interface" parent="." instance=ExtResource( 8 )]
+
+[node name="fires" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Fire" type="Area2D" parent="fires" groups=[
+"firesGroup",
+]]
+position = Vector2( 39.2882, 86.5133 )
+gravity_point = true
+collision_layer = 3
+collision_mask = 3
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fires/Fire"]
+position = Vector2( -1.19055, 6.34961 )
+shape = SubResource( 8 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="fires/Fire"]
+scale = Vector2( 0.320001, 0.320001 )
+frames = SubResource( 41 )
+frame = 30
+speed_scale = 2.0
+playing = true
+
+[node name="Fire2" type="Area2D" parent="fires" groups=[
+"firesGroup",
+]]
+position = Vector2( 38.0976, 134.135 )
+gravity_point = true
+collision_layer = 3
+collision_mask = 3
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fires/Fire2"]
+position = Vector2( -1.19055, 6.34961 )
+shape = SubResource( 8 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="fires/Fire2"]
+scale = Vector2( 0.320001, 0.320001 )
+frames = SubResource( 41 )
+frame = 24
+speed_scale = 2.0
+playing = true
+
+[node name="Fire3" type="Area2D" parent="fires" groups=[
+"firesGroup",
+]]
+position = Vector2( 39.2882, 39.0133 )
+gravity_point = true
+collision_layer = 3
+collision_mask = 3
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fires/Fire3"]
+position = Vector2( -1.19055, 6.34961 )
+shape = SubResource( 8 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="fires/Fire3"]
+scale = Vector2( 0.320001, 0.320001 )
+frames = SubResource( 41 )
+frame = 29
+speed_scale = 2.0
+playing = true
+
+[node name="Fire4" type="Area2D" parent="fires" groups=[
+"firesGroup",
+]]
+position = Vector2( 289.288, 86.0133 )
+gravity_point = true
+collision_layer = 3
+collision_mask = 3
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fires/Fire4"]
+position = Vector2( -1.19055, 6.34961 )
+shape = SubResource( 8 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="fires/Fire4"]
+scale = Vector2( 0.320001, 0.320001 )
+frames = SubResource( 41 )
+frame = 30
+speed_scale = 2.0
+playing = true
+
+[node name="Fire5" type="Area2D" parent="fires" groups=[
+"firesGroup",
+]]
+position = Vector2( 293.598, 141.135 )
+gravity_point = true
+collision_layer = 3
+collision_mask = 3
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fires/Fire5"]
+position = Vector2( -1.19055, 6.34961 )
+shape = SubResource( 8 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="fires/Fire5"]
+scale = Vector2( 0.320001, 0.320001 )
+frames = SubResource( 41 )
+frame = 24
+speed_scale = 2.0
+playing = true
+
+[node name="Fire6" type="Area2D" parent="fires" groups=[
+"firesGroup",
+]]
+position = Vector2( 289.098, 34.135 )
+gravity_point = true
+collision_layer = 3
+collision_mask = 3
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fires/Fire6"]
+position = Vector2( -1.19055, 6.34961 )
+shape = SubResource( 8 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="fires/Fire6"]
+scale = Vector2( 0.320001, 0.320001 )
+frames = SubResource( 41 )
+frame = 23
+speed_scale = 2.0
+playing = true
+
+[node name="Sprite" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 397.801, -6.74239 )
+texture = ExtResource( 12 )
+
+[node name="Audio_Background" parent="." instance=ExtResource( 13 )]
+
+[node name="Audio_Fire" parent="." instance=ExtResource( 14 )]
+[connection signal="body_entered" from="fires/Fire" to="fires/Fire" method="_on_Fire_body_entered"]
+[connection signal="body_entered" from="fires/Fire2" to="fires/Fire2" method="_on_Fire_body_entered"]
+[connection signal="body_entered" from="fires/Fire3" to="fires/Fire3" method="_on_Fire_body_entered"]
+[connection signal="body_entered" from="fires/Fire4" to="fires/Fire4" method="_on_Fire_body_entered"]
+[connection signal="body_entered" from="fires/Fire5" to="fires/Fire5" method="_on_Fire_body_entered"]
+[connection signal="body_entered" from="fires/Fire6" to="fires/Fire6" method="_on_Fire_body_entered"]

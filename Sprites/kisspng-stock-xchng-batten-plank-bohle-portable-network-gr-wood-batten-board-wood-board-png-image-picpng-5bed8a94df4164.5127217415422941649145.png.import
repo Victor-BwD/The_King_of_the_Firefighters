@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/kisspng-stock-xchng-batten-plank-bohle-portable-network-gr-wood-batten-board-wood-board-png-image-picpng-5bed8a94df4164.5127217415422941649145.png-f1f2a34bd099acf69981c78f58831b5c.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Sprites/kisspng-stock-xchng-batten-plank-bohle-portable-network-gr-wood-batten-board-wood-board-png-image-picpng-5bed8a94df4164.5127217415422941649145.png"
+dest_files=[ "res://.import/kisspng-stock-xchng-batten-plank-bohle-portable-network-gr-wood-batten-board-wood-board-png-image-picpng-5bed8a94df4164.5127217415422941649145.png-f1f2a34bd099acf69981c78f58831b5c.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
