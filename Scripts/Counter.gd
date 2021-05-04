@@ -10,7 +10,7 @@ func _physics_process(delta):
 		label_tempo.text = str(tempo).pad_decimals(0)
 	elif(tempo <0):
 		#get_tree().reload_current_scene()
-		get_tree().change_scene("res://GameOver.tscn")
+		get_tree().change_scene("res://Scenes/GameOver.tscn")
 	
 	
 	

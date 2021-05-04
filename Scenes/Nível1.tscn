@@ -1,19 +1,19 @@
 [gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Building.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Building.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Floor.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/kisspng-rock-boulder-clip-art-stones-and-rocks-5ab487369ec306.5521394015217805346503 (1).png" type="Texture" id=4]
 [ext_resource path="res://Sprites/kisspng-stock-xchng-batten-plank-bohle-portable-network-gr-wood-batten-board-wood-board-png-image-picpng-5bed8a94df4164.5127217415422941649145.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/Balde_Água.png" type="Texture" id=6]
 [ext_resource path="res://Sprites/flames_1.png" type="Texture" id=7]
-[ext_resource path="res://Interface.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Interface.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scripts/Fire.gd" type="Script" id=9]
 [ext_resource path="res://Scripts/Balde.gd" type="Script" id=10]
 [ext_resource path="res://Scripts/GoToNível2.gd" type="Script" id=11]
 [ext_resource path="res://0dc26786545163e29ac09b20befbd13b.png" type="Texture" id=12]
-[ext_resource path="res://Audio.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Audio_fire.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Audio.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/Audio_fire.tscn" type="PackedScene" id=14]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 6.95229
@@ -357,7 +357,7 @@ shape = SubResource( 8 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="fires/Fire"]
 scale = Vector2( 0.320001, 0.320001 )
 frames = SubResource( 41 )
-frame = 30
+frame = 7
 speed_scale = 2.0
 playing = true
 
@@ -380,7 +380,7 @@ shape = SubResource( 8 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="fires/Fire2"]
 scale = Vector2( 0.320001, 0.320001 )
 frames = SubResource( 41 )
-frame = 24
+frame = 1
 speed_scale = 2.0
 playing = true
 
@@ -403,7 +403,7 @@ shape = SubResource( 8 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="fires/Fire4"]
 scale = Vector2( 0.320001, 0.320001 )
 frames = SubResource( 41 )
-frame = 30
+frame = 7
 speed_scale = 2.0
 playing = true
 
@@ -426,7 +426,7 @@ shape = SubResource( 8 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="fires/Fire5"]
 scale = Vector2( 0.320001, 0.320001 )
 frames = SubResource( 41 )
-frame = 24
+frame = 1
 speed_scale = 2.0
 playing = true
 

@@ -10,5 +10,5 @@ func _physics_process(delta):
 	FiresCount = Fires.size()
 	print (FiresCount)
 	if FiresCount == 0:
-		get_tree().change_scene("res://Victory.tscn")
+		get_tree().change_scene("res://Scenes/Victory.tscn")
 
