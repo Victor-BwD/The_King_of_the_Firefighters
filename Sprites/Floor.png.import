@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/label_bg.png-8d29189b9fc7f39fee93a0b888f0789d.stex"
+path="res://.import/Floor.png-7a485cdf10c137805cd2d72580b71f1c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://label_bg.png"
-dest_files=[ "res://.import/label_bg.png-8d29189b9fc7f39fee93a0b888f0789d.stex" ]
+source_file="res://Sprites/Floor.png"
+dest_files=[ "res://.import/Floor.png-7a485cdf10c137805cd2d72580b71f1c.stex" ]
 
 [params]
 
